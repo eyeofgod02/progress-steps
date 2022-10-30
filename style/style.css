@@ -121,5 +121,10 @@ footer > a:hover {
 }
 
 #back {
-    outline: 2px solid rgb(133, 133, 133);
+    outline: 2px solid rgb(0, 202, 0);
+}
+
+.disabled {
+    pointer-events: none;
+    outline: 2px solid rgb(133, 133, 133) !important;
 }
