@@ -1,0 +1,125 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    color: rgb(236, 236, 236);
+    background-color: rgb(24, 24, 24);
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.divider {
+    margin: 10px 0 20px 0;
+    width: 30vw;
+    height: 1px;
+    background-color: rgb(236, 236, 236);
+}
+
+.content {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    font-weight: 200;
+    flex: 0 0 auto;
+    padding: 18px;
+}
+
+footer > a:hover {
+    text-decoration: underline;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+.progress {
+    box-shadow: 0px 0px 11px rgb(0, 202, 0);
+    background-color: rgb(0, 202, 0);
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 9%;
+    height: 2px;
+    z-index: -1;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.progress-gray {
+    background-color: rgb(133, 133, 133);
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    z-index: -2;
+}
+
+.circle {
+    background-color: rgb(24, 24, 24);
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    outline: 2px solid rgb(133, 133, 133);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.active {
+    box-shadow: 0px 0px 11px rgb(0, 202, 0);
+    outline: 2px solid rgb(0, 202, 0);   
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    user-select: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    outline: 2px solid rgb(0, 202, 0);
+}
+
+.button:hover {
+    box-shadow: 0px 0px 11px rgb(0, 202, 0);
+}
+
+.button:active {
+    background-color: rgba(0, 202, 0, 0.1);
+}
+
+#back {
+    outline: 2px solid rgb(133, 133, 133);
+}
